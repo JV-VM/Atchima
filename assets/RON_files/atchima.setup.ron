@@ -1,0 +1,17 @@
+EntityConfig(
+  health: 150.0,
+  speed: 450.0,
+  name: "ATCHIMA_FLICKSHER",
+  collider_size: (16.0,16.0), 
+  animation_set: AnimationSet(
+    path_image: "textures/Atchima.png",
+    tilesize_x: 128,
+    tilesize_y: 128,
+    columns: 6,
+    rows: 4,
+    animations:{
+      "IDLE": AnimationFrameSet(start_frame_ptr:4, end_frame_ptr: 6),
+      "MOVING": AnimationFrameSet(start_frame_ptr:0, end_frame_ptr: 4),
+    }
+  )
+)
