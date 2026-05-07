@@ -4,7 +4,7 @@ use bevy_spritesheet_animation::prelude::SpritesheetAnimation;
 
 use crate::{
     config::components::{
-        AnimationMapping, Collider, EntityConfig, Facing, LoadedEntityConfig, YSort,
+        AnimationMapping, Collider, EntityConfig, Facing, LoadedEntityConfig,
     },
     game::world::{Collisions, MainCamera},
 };

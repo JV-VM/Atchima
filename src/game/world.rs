@@ -1,12 +1,5 @@
-use bevy::{
-    ecs::{entity::MapEntities, relationship::Relationship},
-    log::tracing_subscriber::field::debug,
-    prelude::*,
-};
-use bevy_ecs_tiled::prelude::{
-    TilePos, TiledMap, TiledMapAsset, TiledMapReference, TiledName,
-    tiled::{Object, ObjectData},
-};
+use bevy::{ecs::relationship::Relationship, prelude::*};
+use bevy_ecs_tiled::prelude::{TilePos, TiledMap, TiledMapAsset, TiledName};
 
 use crate::{
     config::components::{Collider, EntityAssetCache, EntityConfig, LoadedEntityConfig, YSort},

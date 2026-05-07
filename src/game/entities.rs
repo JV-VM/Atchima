@@ -5,7 +5,7 @@ use crate::{
     },
     game::player::Player,
 };
-use bevy::{math::ops::abs, prelude::*};
+use bevy::prelude::*;
 use bevy_spritesheet_animation::prelude::*;
 #[derive(Component)]
 pub struct Tree;

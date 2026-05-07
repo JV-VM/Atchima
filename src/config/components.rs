@@ -1,8 +1,6 @@
-use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*, sprite::Anchor};
+use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
 use bevy_spritesheet_animation::prelude::*;
 use serde::Deserialize;
-
-use crate::game::player::Player;
 
 #[derive(Resource, Default)]
 pub struct EntityAssetCache {
@@ -93,7 +91,7 @@ pub fn create_entity_animations(
             &mut res_animations,
         );
 
-        let mut sprite = spritesheet
+        let sprite = spritesheet
             .with_size_hint(
                 _info.animation_set.columns as u32 * _info.animation_set.tilesize_x,
                 _info.animation_set.rows as u32 * _info.animation_set.tilesize_y,
@@ -117,7 +115,7 @@ pub fn create_entity_animations(
 fn helper_entity_add(
     commands: &mut Commands,
     entity: Entity,
-    mut sprite: Sprite,
+    sprite: Sprite,
     animation_mapping: AnimationMapping,
 ) {
     commands
